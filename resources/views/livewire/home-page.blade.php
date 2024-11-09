@@ -78,9 +78,8 @@
                     </div>
                 </div>
                 <p class="mb-12 text-base text-center text-white">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magni eius eaque?
-                    Pariatur
-                    numquam, odio quod nobis ipsum ex cupiditate?
+                    Explore our selection of trusted, high-quality medical device brands, known for reliability and
+                    innovation in healthcare. Find the perfect tools to support your medical needs.
                 </p>
             </div>
         </div>
@@ -118,9 +117,7 @@
                     </div>
                 </div>
                 <p class="mb-12 text-base text-center text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magni eius eaque?
-                    Pariatur
-                    numquam, odio quod nobis ipsum ex cupiditate?
+                    Explore Our Categories to Find the Right Medical Equipment for Every Healthcare Need.
                 </p>
             </div>
         </div>
