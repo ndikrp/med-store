@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\Address;
 use App\Models\Order;
 use App\Models\OrderItem;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
@@ -28,5 +29,22 @@ class MyOrdersDetailPage extends Component
             'address' => $address,
             'order' => $order
         ]);
+    }
+    public function downloadPDF()
+    {
+        $order_items = OrderItem::with('product')->where('order_id', $this->order_id)->get();
+        $address = Address::where('order_id', $this->order_id)->first();
+        $order = Order::where('id', $this->order_id)->first();
+
+        $pdf = Pdf::loadView('pdf.order-detail', [
+            'order_items' => $order_items,
+            'address' => $address,
+            'order' => $order,
+        ]);
+
+        return response()->streamDownload(
+            fn() => print ($pdf->output()),
+            "Order_Detail_{$this->order_id}.pdf"
+        );
     }
 }

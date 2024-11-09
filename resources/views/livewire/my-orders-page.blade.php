@@ -37,7 +37,7 @@
                                                                 $status = '<span class="bg-green-500 py-1 px-3 rounded text-white shadow">Shipped</span>';
                                                             } elseif ($order->status == 'delivered') {
                                                                 $status = '<span class="bg-green-700 py-1 px-3 rounded text-white shadow">Delivered</span>';
-                                                            } elseif ($order->status == 'cancelled') {
+                                                            } elseif ($order->status == 'canceled') {
                                                                 $status = '<span class="bg-red-500 py-1 px-3 rounded text-white shadow">Cancelled</span>';
                                                             }
 
