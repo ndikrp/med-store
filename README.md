@@ -7,7 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## How To Run (Indonesia)
+1. Pastikan menggunakan php >=8.1, npm >=9.6.7, dan composer >=2.6.3
+2. Install dependency menggunakan command `composer install`
+3. Lakukan migrasi database `php artisan migrate`
+4. Buka 2 terminal dan jalankan `php artisan serve` dan `npm run dev` 
+
+### How To Run (English)
+1. Ensure you are using PHP >=8.1, npm >=9.6.7, and composer >=2.6.3.
+2. Install dependencies using the command `composer install`.
+3. Run the database migration with `php artisan migrate`.
+4. Open two terminals and run `php artisan serve` and `npm run dev`.
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
